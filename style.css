@@ -1,0 +1,238 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(60, 58, 58);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.calculator {
+    height: 500px;
+    width: 430px;
+    border-radius: 16px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* TOP PANEL */
+/* TOP PANEL */
+/* TOP PANEL */
+
+
+
+.top-panel {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 20px 20px 20px;
+    position: relative;
+    width: 90%;
+}
+
+/* BUTTONS */
+
+.icons {
+    display: flex;
+}
+
+.orange img, .green img, .red img {
+    width: 15px;
+}
+
+.red img {
+    margin-right: 6px;
+}
+
+.orange img {
+    margin-right: 6px;
+}
+
+/* LOGO */
+
+.logo img {
+    width: 27px;
+    margin-left: 123px;
+    transform: translateY(-10%);
+}
+
+
+
+/* DISPLAY */
+/* DISPLAY */
+/* DISPLAY */
+
+
+
+.display {
+    display: flex;
+    background-color: black;
+    border-radius: 15px;
+    width: 200px;
+    margin: 0px 20px 20px 20px;
+    width: 90%;
+    height: 80px;
+}
+
+.screen {
+    width: 100%;
+    margin: 10px 17px 10px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: scroll;
+}
+
+@font-face {
+    font-family: "Calculator";
+    src: url(font2/CursedTimerUlil-Aznm.ttf);
+}
+
+.screen p {
+    color: white;
+    font-size: 55px;
+    font-family: "Calculator";
+}
+
+
+/* BUTTONS  */
+/* BUTTONS  */
+/* BUTTONS  */
+
+
+
+.buttons {
+    display: flex;
+    margin: 17px 27px 20px 27px;
+    height: 280px;
+    flex-direction: column;
+}
+
+.row1, .row2, .row3, .row4, .row5 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row1 button, .row2 button, .row3 button, .row4 button {
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 80px;
+    height: 45px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: none;
+}
+
+.positive-negative {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.positive {
+    margin-bottom: 10px;
+    height: 25px;
+    font-size: 22px;
+    padding: -10px;
+    scale: 1.1;
+    border-bottom: 2px solid black;
+}
+
+.negative {
+    transform: translateY(-30%);
+}
+
+.multiply p {
+    transform: translateY(8%);
+    font-size: 24px;
+}
+
+.minus p {
+    transform: translateY(-43%);
+    border-bottom: 2px solid black;
+    color: transparent;
+}
+
+/* ROW-5 */
+/* ROW-5 */
+/* ROW-5 */
+
+.zero {
+    width: 180px;
+    height: 45px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: none;
+}
+
+.dot p, .equal p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.dot, .equal {
+    width: 80px;
+    height: 45px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: none;
+}
+
+
+/* MY LOGO */
+/* MY LOGO */
+/* MY LOGO */
+
+
+.mylogo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 97%;
+    left: 50%;
+}
+
+.mylogo img {
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
