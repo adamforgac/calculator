@@ -1,0 +1,75 @@
+@media only screen and (max-width: 460px) {
+    .calculator {
+        height: 330px;
+        width: 230px;
+    }
+
+    .top-panel {
+        margin: 15px 20px 10px 20px;
+        position: relative;
+        width: 90%;
+    }
+
+    .orange img, .green img, .red img {
+        width: 10px;
+    }
+
+    .red img {
+        margin-right: 4px;
+    }
+    
+    .orange img {
+        margin-right: 4px;
+    }
+
+    .logo img {
+        width: 18px;
+        margin-left: 50px;
+    }
+
+    .display {
+        width: 85%;
+        height: 48px;
+        margin: 0px 16px 10px 16px;
+    }
+
+    .screen {
+        margin: 8px 8px 5px 8px;
+    }
+
+    .screen p {
+        font-size: 28px;
+    }
+
+    .buttons {
+        margin: 7px 20px 20px 20px;
+        height: 200px;
+    }
+
+    .row1 button, .row2 button, .row3 button, .row4 button {
+        width: 45px;
+        height: 35px;
+        font-size: 17px;
+    }
+
+    .multiply p {
+        transform: translateY(8%);
+        font-size: 18px;
+    }
+
+    .zero {
+        width: 95px;
+        height: 35px;
+        border-radius: 7px;
+        font-size: 17px;
+    }
+
+    .dot, .equal {
+        width: 45px;
+        height: 35px;
+    }
+    
+    .mylogo img {
+        width: 100px;
+    }
+}
