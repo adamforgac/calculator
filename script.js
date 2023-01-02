@@ -293,6 +293,38 @@ function removeNumber() {
 
 
 
+// PERCENTAGE BUTTON FUNCTION
+// PERCENTAGE BUTTON FUNCTION
+// PERCENTAGE BUTTON FUNCTION
+
+
+
+percentage.addEventListener("click", countPercent);
+
+
+function countPercent() {
+  const result = Number(screen.textContent) / 100;
+  const resultNum = result;
+
+
+  if(screen.textContent === "ERROR") {
+      resultNum = "ERROR";
+  }
+
+
+  screen.textContent = resultNum;
+
+
+  const screenCount = screen.textContent.split("");
+
+  if(screenCount.length > 10) {
+      removeNumber();
+  }
+}
+
+
+
+
 
   
   
