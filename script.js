@@ -178,5 +178,78 @@ numeric.forEach(button => button.addEventListener("click", function() {
         percentage.addEventListener("click", countPercent);
     }
 }));
+
+
+
+// IF USER CLICKS A OPERATOR BUTTON
+// IF USER CLICKS A OPERATOR BUTTON
+// IF USER CLICKS A OPERATOR BUTTON
+
+
+
+operators.forEach(operator => operator.addEventListener("click", function() {
+    currentOperator = operator.value;
+    currentNumber = screen.textContent;
+    example.push(currentNumber);
+    example.push(currentOperator);
+  
+  
+    if(currentNumber == "") {
+        currentNumber = 0;
+    }
+  
+  
+    currentDisplayValue = "";
+  
+  
+    if(example.length === 4) {
+        exampleProcess = example.slice(0, 3);
+        example.splice(0, 3);
+        callOperate();
+    }
+}));
+  
+  function callOperate() {
+    const num1 = Number(exampleProcess[0]);
+    const operator = exampleProcess[1];
+    const num2 = Number(exampleProcess[2]);
+  
+  
+    operate(num1, num2, operator);
+    
+  
+    const screenCount = screen.textContent.split("");
+  
+  
+    if(screenCount.length > 10) {
+        clearCalc();
+        alert("Too many numbers");
+    }
+}
+  
+  
+  
+  equal.addEventListener("click", function() {
+    const number1 = Number(example[0]);
+    const sign = example[1];
+    const number2 = Number(screen.textContent);
+  
+  
+    operate(number1, number2, sign);
+    example.splice(0, 3);
+  
+  
+    const screenCount = screen.textContent.split("");
+  
+    
+    if(screenCount.length > 10) {
+        clearCalc();
+        alert("Too many numbers");
+    }
+});
+
+
+
+
   
   
