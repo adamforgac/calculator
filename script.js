@@ -357,9 +357,22 @@ function addDecimal() {
 
 
 
+// CLEAR BUTTON
+// CLEAR BUTTON
+// CLEAR BUTTON
 
 
 
+const clear = document.querySelector(".switch");
 
-  
-  
+
+clear.addEventListener("click", clearCalc);
+
+
+function clearCalc() {
+  screen.textContent = 0;
+  exampleProcess = undefined;
+  example = [];
+  currentDisplayValue = "";
+  currentOperator = undefined;
+}
