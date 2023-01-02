@@ -65,3 +65,87 @@ function multiply(num1, num2) {
   
     return divide;
 }
+
+
+
+// A FUNCTION THAT COUNTS EXAPLES
+// A FUNCTION THAT COUNTS EXAPLES
+// A FUNCTION THAT COUNTS EXAPLES
+
+
+
+function operate(num1, num2, operator) {
+    if(operator === "divide") {
+       const divided = divide(num1, num2);
+       currentDisplayValue = divided;
+  
+  
+       const roundNumber = Number(currentDisplayValue.toFixed(3));  // ROUND THE NUMBER WHEN NEEDED
+       example.unshift(currentDisplayValue);
+       screen.textContent = roundNumber;
+       currentDisplayValue = "";
+  
+  
+       if(num2 == 0) {  // IF USER TRIES TO DIVIDE BY 0
+        screen.textContent = "";
+        screen.textContent = "ERROR";
+       }
+  
+  
+       if(isNaN(num1) || isNaN(num2)) {
+        screen.textContent = "ERROR";
+       }
+  
+  
+  
+    } else if(operator === "multiply") {
+       const multiplied = multiply(num1, num2);
+       currentDisplayValue = multiplied;
+  
+  
+       const roundNumber = Number(currentDisplayValue.toFixed(3));
+       example.unshift(currentDisplayValue);
+       screen.textContent = roundNumber;
+       currentDisplayValue = "";
+  
+  
+       if(isNaN(num1) || isNaN(num2)) {
+        screen.textContent = "ERROR";
+       }
+    
+  
+    
+    } else if(operator === "minus") {
+        const minused = minus(num1, num2);
+        currentDisplayValue = minused;
+  
+  
+        const roundNumber = Number(currentDisplayValue.toFixed(3));
+        example.unshift(currentDisplayValue);
+        screen.textContent = roundNumber; 
+        currentDisplayValue = "";
+  
+  
+        if(isNaN(num1) || isNaN(num2)) {
+            screen.textContent = "ERROR";
+        }
+    
+  
+    
+    } else if(operator === "sum") {
+        const summed = sum(num1, num2);
+        currentDisplayValue = summed;
+  
+  
+        const roundNumber = Number(currentDisplayValue.toFixed(3));
+        example.unshift(currentDisplayValue);
+        screen.textContent = roundNumber;
+        currentDisplayValue = "";
+  
+  
+        if(isNaN(num1) || isNaN(num2)) {
+            screen.textContent = "ERROR";
+        }
+    }
+  }
+  
