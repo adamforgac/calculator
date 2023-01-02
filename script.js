@@ -324,6 +324,41 @@ function countPercent() {
 
 
 
+// DECIMAL BUTTON FUNCTION
+// DECIMAL BUTTON FUNCTION
+// DECIMAL BUTTON FUNCTION
+
+
+
+let separatedScreen;
+const decimalValue = decimal.value;
+
+
+decimal.addEventListener("click", checkDecimal);
+
+
+function checkDecimal() {
+  separatedScreen = screen.textContent.split("");
+
+
+  if(separatedScreen.includes(".")) {
+      false;
+  } else {
+      addDecimal();
+  }
+}
+
+
+
+function addDecimal() {
+  screen.textContent += decimalValue;
+  currentDisplayValue = screen.textContent;
+}
+
+
+
+
+
 
 
   
