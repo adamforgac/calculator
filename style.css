@@ -144,24 +144,15 @@ body {
     border: none;
 }
 
-.positive-negative {
+.backspace {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.positive {
-    margin-bottom: 10px;
-    height: 25px;
-    font-size: 22px;
-    padding: -10px;
-    scale: 1.1;
-    border-bottom: 2px solid black;
-}
-
-.negative {
-    transform: translateY(-30%);
+.backspace i {
+    color: black;
 }
 
 .multiply p {
@@ -225,6 +216,21 @@ body {
 
 .mylogo img {
     width: 150px;
+}
+
+
+/* BUTTON EFFECTS */
+/* BUTTON EFFECTS */
+/* BUTTON EFFECTS */
+
+
+
+.operator:focus {
+    border: 3px solid black;
+}
+
+.buttons button:active {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
 }
 
 
