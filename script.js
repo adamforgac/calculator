@@ -250,6 +250,49 @@ operators.forEach(operator => operator.addEventListener("click", function() {
 
 
 
+// BACKSPACE BUTTON FUNCTION
+// BACKSPACE BUTTON FUNCTION
+// BACKSPACE BUTTON FUNCTION
+
+
+
+backSpace.addEventListener("click", removeNumber);
+
+
+function removeNumber() {
+  const screenCount = screen.textContent.split("");
+  screenCount.splice(screenCount.length - 1, screenCount.length);
+  screen.textContent = "";
+
+
+  for(let i = 0; i <= screenCount.length - 1; i++) {
+      screen.textContent += screenCount[i];
+  }
+
+
+  currentDisplayValue = screen.textContent;
+
+
+  if(screen.textContent === "ERRO") {  // PREVENTS THE USER FROM REMOVING ERROR FROM THE DISPLAY BY CLICKING BACKSPACE
+      screen.textContent = "ERROR";
+  }
+
+
+  if(screen.textContent == "") {  // WHEN THE USER REMOVES EVERY NUMBER, THE DISPLAY IS NOT EMPTY
+      screen.textContent = 0;
+  } 
+
+
+  if(screenCount.length > 10) {
+      removeNumber();
+      percentage.removeEventListener("click", countPercent);
+  } else {
+      percentage.addEventListener("click", countPercent);
+  }
+}
+
+
+
 
   
   
