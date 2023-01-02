@@ -147,5 +147,36 @@ function operate(num1, num2, operator) {
             screen.textContent = "ERROR";
         }
     }
-  }
+}
+
+
+
+// IF USER CLICKS A NUMBER BUTTON
+// IF USER CLICKS A NUMBER BUTTON
+// IF USER CLICKS A NUMBER BUTTON
+
+
+
+numeric.forEach(button => button.addEventListener("click", function() {
+    currentDisplayValue += button.value;
+    screen.textContent = currentDisplayValue;
+  
+  
+    if(screen.textContent == "00") {  // PREVENTS THE USER FROM TYPING MULTIPLE ZEROS WHEN DISPLAY IS CLEAR
+        screen.textContent = 0;
+        currentDisplayValue = "";
+    }
+  
+  
+    const screenCount = screen.textContent.split("");
+  
+  
+    if(screenCount.length > 10) {  // PREVENTS THE NUMBERS FROM OVERFLOWING THE SCREEN
+        removeNumber();
+        percentage.removeEventListener("click", countPercent);
+    } else {
+        percentage.addEventListener("click", countPercent);
+    }
+}));
+  
   
