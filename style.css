@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    touch-action: manipulation;
 }
 
 body {
@@ -98,7 +99,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    overflow-x: scroll;
+    overflow: hidden;
 }
 
 @font-face {
