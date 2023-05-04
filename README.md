@@ -1,2 +1,2 @@
 # Calculator
-JS calculator from The Odin Project.
+JS calculator with all the basic functions
