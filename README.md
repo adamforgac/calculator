@@ -1,2 +1,2 @@
 # calculator
-JS calculator with all the basic functions
+JS calculator with all the basic functions.
